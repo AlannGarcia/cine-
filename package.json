@@ -4,8 +4,10 @@
   "description": "Una app de peliculas en la cual podes ver en que plataforma ver la película, comprar entradas para la misma en cines cercanos y enterarte de próximos estrenos exclusivos.",
   "main": "index.js",
   "requires": true,
+
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

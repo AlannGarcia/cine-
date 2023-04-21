@@ -39,8 +39,54 @@ app.use((req, res, next) => {
 });
 
 
-//Routes
+
 app.use('/', require('./routes/index'));
+
+
+
+app.get('/', (req,res,next)=>{
+    res.render('index');
+});
+
+app.get('/signup', (req,res,next) =>{
+    res.render('signup');
+});
+
+app.post('/signup', passport.authenticate('local-signup',{
+    successRedirect: '/main',
+    failureRedirect: '/signup',
+    pastReqToCallBack: true 
+}));
+
+app.get('/signin', (req,res,next) =>{
+    res.render('signin');
+});
+
+ app.post('/signin', passport.authenticate('local-signin', {
+     successRedirect: '/main',
+     failureRedirect: '/signin',
+     pastReqToCallBack: true 
+ }))
+ app.get('/main', isAuthenticated, (req,res,next) =>{
+     res.render('main');
+ });
+
+app.get("/logout", (req, res, next) => {
+    req.logout(req.user, err => {
+      if(err) return next(err);
+      res.redirect("/");
+    });
+});
+
+
+function isAuthenticated(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect('/');
+}
+
+
 
 
 //Iniciamos el servidor
