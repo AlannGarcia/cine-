@@ -45,7 +45,7 @@ app.use('/', require('./routes/index'));
 
 
 app.get('/', (req,res,next)=>{
-    res.render('index');
+    res.render('home');
 });
 
 app.get('/signup', (req,res,next) =>{

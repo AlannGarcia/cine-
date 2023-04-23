@@ -37,6 +37,11 @@ router.get("/logout", (req, res, next) => {
     });
 });
 
+router.get("/content/top", (req, res, next) => {
+    res.render('content/top');
+    });
+
+
 function isAuthenticated(req, res, next){
     if(req.isAuthenticated()){
         return next();
