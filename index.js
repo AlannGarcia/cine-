@@ -12,6 +12,8 @@ const app = express();
 require('./database');
 require('./passport/local.auth');
 
+//archivos estaticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Configuraciones
 app.set('views', path.join(__dirname, 'views'));//informo donde se encuentran las vistas 
@@ -45,6 +47,7 @@ app.use('/', require('./routes/index'));
 
 
 app.get('/', (req,res,next)=>{
+
     res.render('index');
 });
 
