@@ -22,11 +22,16 @@ function mostrarListaPeliculas() {
 mostrarListaPeliculas()
 
 
-// Obtener la ventana emergente y los elementos de contenido
+
+//Obtener la ventana emergente y los elementos de contenido
 const modal = document.getElementById("myModal");
 const modalPoster = document.getElementById("modalPoster");
 const modalTitle = document.getElementById("modalTitle");
 const modalSynopsis = document.getElementById("modalSynopsis");
+const modalTrailer = document.getElementById("modalTrailer");
+const modalPlataforma = document.getElementById("modalPlataforma");
+const modalPuntuacion = document.getElementById("modalPuntuacion");
+const modalValoracion = document.getElementById("modalValoracion");
 
 // Obtener todas las imágenes de portada y agregar un evento de clic
 const portadas = document.querySelectorAll("#pelis img");
@@ -39,6 +44,10 @@ portadas.forEach((portada, index) => {
     modalPoster.src = pelicula.Poster;
     modalTitle.innerText = pelicula.Titulo;
     modalSynopsis.innerText = pelicula.Sinopsis;
+    modalTrailer.src = pelicula.Trailer;
+    modalPlataforma.innerText = pelicula.Plataforma;
+    modalPuntuacion.innerText = pelicula.Puntuacion;
+    modalValoracion.innerText = pelicula.Valoracion;
     
     // Mostrar la ventana emergente
     modal.style.display = "block";
@@ -58,28 +67,3 @@ close.addEventListener("click", () => {
 
 
 
-
-// const imagenes = document.querySelectorAll("#pelis img");
-// imagenes.forEach(img => {
-//   img.addEventListener("click", mostrarInformacion(img));
-// });
-
-
-// function mostrarInformacion(evento,img) {
-//     //const peli = peliculas.find(p => p.Poster == img);
-//     const peli = evento.target.dataset;
-//     console.log(peli);
-//     const titulo = document.getElementById("titulo");
-//     const sinopsis = document.getElementById("sinopsis");
-//     const trailer = document.getElementById("trailer");
-//     const puntuacion = document.getElementById("puntuacion");
-  
-//     //titulo.textContent = peli.Poster;
-//     //sinopsis.textContent = peli.Sinopsis;
-//     //trailer.textContent = peli.Trailer;
-//     //puntuacion.textContent = peli.Puntuacion;
-  
-//     const modal = document.getElementById("modal");
-//     modal.style.display = "block";
-//   }
-  

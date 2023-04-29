@@ -19,14 +19,20 @@
         
 
        <div id="myModal" class="container modal">
-          <div class="modal-dialog modal-dialog-centered"role="document">
-            <div class="modal-content" id="contenidoDeVentana" >
-              <span class="close">&times;</span>
+            <div class="modal-content" id="contenidoDeVentana" style="text-decoration: none;
+            color: black;">
+              <a href=""><span class="close" style="font-size: 30px;">&times;</span></a>
               <img id="modalPoster" src="" alt="Movie Poster" style="width: 300px; align-items: center;">
               <h2 id="modalTitle" ></h2>
               <p id="modalSynopsis" ></p>
+              <iframe id="modalTrailer" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <h2>Plataforma donde poder verla</h2>
+              <p id="modalPlataforma" ></p>
+              <h2>Puntuacion</h2>
+              <p id="modalPuntuacion" ></p>
+              <h2>Valoracion</h2>
+              <p id="modalValoracion" ></p>
             </div>
-          </div>
         </div> 
         <script type="module" src='mostrarPeliculas.js'></script>
     </body>

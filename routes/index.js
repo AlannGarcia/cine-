@@ -10,6 +10,12 @@ router.get('/signup', (req,res,next) =>{
     res.render('signup');
 });
 
+router.get('/views/vistaPeliculas', (req,res,next) =>{
+    res.render('vistaPeliculas');
+});
+
+
+
 router.post('/signup', passport.authenticate('local-signup',{
     successRedirect: '/main',
     failureRedirect: '/signup',
