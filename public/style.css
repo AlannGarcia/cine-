@@ -3,6 +3,128 @@
     padding: 0;
 }
 
-#myModal{
-    margin: auto;
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D1F5FF;
+    font-family: 'Lora', serif;
+  }
+
+.close {
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    transition: 0.5s;
+}
+.close:hover{
+    color: #7D53DE;
+}
+
+#modalPoster {
+    display: block;
+    margin: 0 auto;
+}
+
+#modalTitle {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 3% 0%;
+}
+
+#myModal .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#myModal .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#modalSynopsis {
+    font-size: 20px;
+}
+
+#modalPlataforma{
+    font-size:20px;
+}
+
+.textoSinPelis{
+    text-align: center;
+    font-size: 40px;
+}
+
+/*cartas */
+.card {
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+
+    
+  }
+  
+  
+  .card-img-top {
+    max-height: 300px;
+  }
+  
+  .card-title {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  }
+
+  /* buscador */
+#busqueda{
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#busqueda:focus{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/*Boton inicio registro*/
+.btn{
+    background-color: #373F51;
+    color: #D8DBE2;
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #4f75d4;
+}
+
+#showPasswordButton{
+    background-color: #373F51;
+    color: #D8DBE2;
+    margin-left: 77%;
+    transition: 1s;
+}
+
+#showPasswordButton:hover{
+    background-color: #4f75d4;
 }

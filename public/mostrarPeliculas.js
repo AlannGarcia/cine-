@@ -17,6 +17,7 @@ function mostrarListaPeliculas(pelisFiltradas) {
     pelis.innerHTML = "";
     if (pelisFiltradas.length === 0) {
       const p = document.createElement("p");
+      p.classList.add('textoSinPelis');
       p.textContent = "No se encontraron películas con estas características";
       pelis.appendChild(p);
       return;
@@ -25,11 +26,12 @@ function mostrarListaPeliculas(pelisFiltradas) {
         const div = document.createElement("div");
         div.classList.add('col-md-2');
         const divCard = document.createElement("div");
-        divCard.classList.add('card', 'mb-4', 'shadow', 'bg-transparent');
+        divCard.classList.add('card', 'mb-4', 'shadow-sm');
         const img = document.createElement("img");
         img.classList.add('card-img-top');
+        img.style.cursor = "pointer";
         const h2 = document.createElement("h2");
-        h2.classList.add('card-title')
+        h2.classList.add('card-title', 'text-center')
         img.src = pel.Poster;
         h2.textContent = pel.Titulo;
         divCard.appendChild(img);
