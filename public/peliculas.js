@@ -7,7 +7,8 @@ const peliculas = [
       Puntuacion: [],
       Valoracion: [],
       Genero: "Crimen, Drama, Historia",
-      Plataforma: "Netflix"
+      Plataforma: "Netflix",
+      puntuacionMaxima: 5
     },
     {
       Poster: "https://www.themoviedb.org/t/p/original/tp0u1s5zdIF52HW96hp1uAMtnGr.jpg",
@@ -17,7 +18,8 @@ const peliculas = [
       Puntuacion: [],
       Valoracion: [],
       Genero: "Drama, Historia",
-      Plataforma: "Netflix"
+      Plataforma: "Netflix",
+      puntuacionMaxima: 5
     },
     {
       Poster: "https://www.themoviedb.org/t/p/original/kovE2ZReOuyfgJyQKsbCXvhc0VN.jpg",
@@ -27,7 +29,8 @@ const peliculas = [
       Puntuacion: [],
       Valoracion: [],
       Genero: "Comedia, Drama",
-      Plataforma: "Prime Video"
+      Plataforma: "Prime Video",
+      puntuacionMaxima: 5
     },
     {
       Poster: "https://www.themoviedb.org/t/p/original/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
@@ -37,7 +40,8 @@ const peliculas = [
       Puntuacion: [],
       Valoracion: [],
       Genero: "Aventura, Drama, Fantasía",
-      Plataforma: "Netflix"
+      Plataforma: "Netflix",
+      puntuacionMaxima: 5
     },
     {
         Poster: "https://www.themoviedb.org/t/p/original/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
@@ -47,7 +51,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Acción, Aventura, Ciencia Ficción",
-        Plataforma: "Cines"
+        Plataforma: "Cines",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/pMTMSKBEe5sMg1ZxWCy9YWLuyln.jpg",
@@ -57,7 +62,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Comedia, Drama, Romance",
-        Plataforma: "Cines"
+        Plataforma: "Cines",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
@@ -67,7 +73,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Acción, Aventura, Drama",
-        Plataforma: "HBO Max"
+        Plataforma: "HBO Max",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/nWBPLkqNApY5pgrJFMiI9joSI30.jpg",
@@ -77,7 +84,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Comedia",
-        Plataforma: "Amazon Prime Video"
+        Plataforma: "Amazon Prime Video",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
@@ -87,7 +95,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Acción, Aventura, Ciencia ficción",
-        Plataforma: "Disney+"
+        Plataforma: "Disney+",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/mZuAPY4ETMQPHhCXIcJ90kd6RaS.jpg",
@@ -97,7 +106,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Crimen, Drama, Suspense",
-        Plataforma: "HBO Max"
+        Plataforma: "HBO Max",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/3Tf8vXykYhzHdT0BtsYTp570JGQ.jpg",
@@ -107,7 +117,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Crimen, Drama",
-        Plataforma: "Netflix"
+        Plataforma: "Netflix",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
@@ -117,7 +128,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Comedia, Drama, Música",
-        Plataforma: "Amazon Prime Video"
+        Plataforma: "Amazon Prime Video",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
@@ -127,7 +139,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Terror",
-        Plataforma: "HBO Max"
+        Plataforma: "HBO Max",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/d08HqqeBQSwN8i8MEvpsZ8Cb438.jpg",
@@ -137,7 +150,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Acción",
-        Plataforma: "Disney+"
+        Plataforma: "Disney+",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/wToO8opxkGwKgSfJ1JK8tGvkG6U.jpg",
@@ -147,7 +161,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Comedia",
-        Plataforma: "Disney+"
+        Plataforma: "Disney+",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/34nDCQZwaEvsy4CFO5hkGRFDCVU.jpg",
@@ -157,7 +172,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Ciencia Ficción",
-        Plataforma: "Amazon Prime Video"
+        Plataforma: "Amazon Prime Video",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
@@ -167,7 +183,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Animación, Aventura, Familia",
-        Plataforma: "Disney+"
+        Plataforma: "Disney+",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/oU7Oq2kFAAlGqbU4VoAE36g4hoI.jpg",
@@ -177,7 +194,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Ciencia ficción, Aventura",
-        Plataforma: "HBO Max"
+        Plataforma: "HBO Max",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
@@ -187,7 +205,8 @@ const peliculas = [
         Puntuacion: [],
         Valoracion: [],
         Genero: "Fantasía, Aventura",
-        Plataforma: "Netflix"
+        Plataforma: "Netflix",
+        puntuacionMaxima: 5
       },
       {
         Poster: "https://www.themoviedb.org/t/p/original/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",

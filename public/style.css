@@ -128,3 +128,8 @@
 #showPasswordButton:hover{
     background-color: #4f75d4;
 }
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+  }
