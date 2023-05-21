@@ -10,7 +10,7 @@ const modalSynopsis = document.getElementById("modalSynopsis");
 const modalTrailer = document.getElementById("modalTrailer");
 const modalPlataforma = document.getElementById("modalPlataforma");
 const modalPuntuacion = document.getElementById("modalPuntuacion");
-const modalValoracion = document.getElementById("modalValoracion");
+const modalCines = document.getElementById("modalCines");
 
 
 
@@ -51,12 +51,8 @@ function mostrarListaPeliculas(pelisFiltradas) {
       // Agregar evento de clic solamente a esta estrella
       star.addEventListener("click", () => {
         console.log('se hizo click');
-        const value = parseInt(star.getAttribute("data-value"));
-        console.log(value);
-        console.log(pel.Titulo);
-        console.log(pel.Puntuacion);
+        const value = parseInt(star.getAttribute("data-value")); 
         pel.Puntuacion += value;
-        console.log(pel.Puntuacion);
         star.style.color = "black"; // Pintar la estrella clickeada de negro
       });
 
@@ -96,7 +92,7 @@ function mostrarListaPeliculas(pelisFiltradas) {
         modalTrailer.src = pelicula.Trailer;
         modalPlataforma.innerText = pelicula.Plataforma;
         modalPuntuacion.innerText = pelicula.Puntuacion;
-        modalValoracion.innerText = pelicula.Valoracion;
+        modalCines.innerText = pelicula.CineDondeVerla;
 
         // Mostrar la ventana emergente
         modal.style.display = "block";

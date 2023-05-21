@@ -35,7 +35,9 @@
     font-weight: 600;
     margin: 3% 0%;
 }
-
+#modalCines{
+  font-size: 20px;
+}
 #myModal .row {
     display: flex;
     flex-wrap: wrap;
