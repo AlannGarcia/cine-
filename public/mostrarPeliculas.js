@@ -52,7 +52,7 @@ function mostrarListaPeliculas(pelisFiltradas) {
       star.addEventListener("click", () => {
         console.log('se hizo click');
         const value = parseInt(star.getAttribute("data-value")); 
-        pel.Puntuacion += value;
+        pel.Puntuacion = value;
         star.style.color = "black"; // Pintar la estrella clickeada de negro
       });
 
