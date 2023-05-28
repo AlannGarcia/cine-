@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cinesDisp{
+    margin-bottom: 40px;
+}
+#cinesDisp h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#cines-container {
+    text-align: center;
+    cursor: pointer;
+    font-size: 23px;
+    width: 40%;
+    margin: auto;
+    
+}
+.list-group-item{
+    transition: 0.3s;
+    
+}
+
+.list-group-item-action:hover {
+    background-color:#373F51; /* Cambia el color de fondo a tu elección */
+    color: #ffffff; 
+}
+
+#detallesCine h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+#detallesCine {
+    margin-left: 40px;
+}
+
+#detallesCine p {
+    font-size: 30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cines</title>
+    <link rel="stylesheet" href="../cssCines.css">
+</head>
+<body>
+    <%- layout('layouts/plantillaEjs') %>
+    <div class="container">
+        
+          <div  id="cinesDisp">
+            <h1>Cines disponibles</h1>
+            <div id="cines-container" class="list-group"></div>
+          </div>
+          <div  id="detallesCine">
+            <h2>Detalles del cine seleccionado</h2>
+            <h3>Películas:</h3>
+            <p id="peliculas"></p>
+            <h3>Combos:</h3>
+            <p id="combos"></p>
+          </div>
+    
+      </div>
+      
+
+
+<script src="../pantallaCines.js" data-lista-cines="<%= JSON.stringify(listaCines) %>"></script>
+
+</body>
+</html>

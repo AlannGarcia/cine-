@@ -1,5 +1,6 @@
 const router = require('express').Router(); 
 const passport = require('passport');
+const cines = require('../models/cine.js');
 
 
 router.get('/', (req,res,next)=>{
@@ -36,6 +37,22 @@ router.get('/main', isAuthenticated, (req,res,next) =>{
     res.render('main');
 });
 
+
+async function exportarCines(){
+    const listaCines = await cines.find();
+    return listaCines;
+}
+
+
+router.get('/cines', async (req,res,next) =>{
+    const listaCines = await cines.find();
+    console.log(listaCines);
+    res.locals.listaCines = listaCines; 
+    res.render('cines',{listaCines});
+});
+
+
+
 router.get("/logout", (req, res, next) => {
     req.logout(req.user, err => {
       if(err) return next(err);
@@ -50,4 +67,4 @@ function isAuthenticated(req, res, next){
     res.redirect('/');
 }
 
-module.exports = router;
+module.exports = router, exportarCines;

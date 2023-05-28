@@ -74,6 +74,7 @@ app.get('/signin', (req,res,next) =>{
      res.render('main');
  });
 
+
 app.get("/logout", (req, res, next) => {
     req.logout(req.user, err => {
       if(err) return next(err);
