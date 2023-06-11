@@ -9,19 +9,22 @@
 </head>
 <body >
     <%- layout('layouts/plantillaEjs') %>
-        <div class="container mx-auto mt-5" style="max-width: 700px; font-family: 'Open Sans', sans-serif;">
+        <div class="container" style="font-family: 'Open Sans', sans-serif;" id="signup">
             <form action="/signup" method="POST">
-                <div class="mb-3">
-                  <h1 style="font-size: 36px; color: #070c1c; font-family:'Anton', sans-serif; font-weight: bold; ">Registrarse</h1>
+                <div class="formulario">
+                  <h1 style="font-size: 36px; color: #070c1c; font-family:'Anton', sans-serif; font-weight: bold; text-align: center;">Registrarse</h1>
                   <label for="exampleInputEmail1" class="form-label" >Correo electronico</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Ej: ejemplo@gmail.com" autofocus>
                 </div>
-                <div class="mb-3">
+                <div >
                   <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" name="password" >
+                  <button id="showPasswordButton">Mostrar contraseña</button>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrarse</button>
               </form>
         </div>
+        <script src="../contra.js"></script>
+
 </body>
 </html>

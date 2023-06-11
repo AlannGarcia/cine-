@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body{
+    background-image: none;
+    background-color: #c93132;
+background-image: linear-gradient(0deg, #c93132 0%, #284fd4 100%);
+
+}
 #cinesDisp{
     margin-bottom: 40px;
 }

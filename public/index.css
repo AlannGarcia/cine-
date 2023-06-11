@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-image: url('./img/posters.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.navbar-nav .nav-item .nav-link, .navbar-brand {
+    background-color: #375fbd;
+    color: #D8DBE2;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px; /* Bordes redondos */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 0.4s;
+  }
+  
+  /* Estilos para el hover en los elementos de navegación */
+  .navbar .nav-item .nav-link:hover, .navbar-brand:hover {
+    background-color:#373F51; /* Cambia el color de fondo a tu elección */
+    color: #ffffff; 
+    transform: scale(1.05);
+  }
+
+#imagenLogo{
+    width: 900px;
+    margin: 10% 14%;
+    background-color: rgba(0, 0, 0, 0.18);
+    margin-bottom: 0%;
+}
+
+.texto{
+    font-size: 50px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #ffffff; 
+}
+
+
+/*  INICIO DE SESION  */
+/*Boton inicio registro*/
+#signin {
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 45%;
+    height: 70vh;
+    margin-left: 3%;
+    margin-top: 30px;
+  }
+
+.formulario{
+    padding-top: 40px;
+}
+
+form label{
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.btn{
+    font-size: 20px;
+    background-color: #373F51;
+    color: #D8DBE2;
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 1s;
+    width: 60%;
+    margin: 6% 18%;
+}
+  
+.btn:hover{
+    transform: scale(1.05);
+    background-color: #4f75d4;
+}
+
+#showPasswordButton{
+    background-color: #373F51;
+    color: #D8DBE2;
+    margin-left: 77%;
+    transition: 1s;
+}
+
+#showPasswordButton:hover{
+    background-color: #4f75d4;
+}
+
+/*  REGISTRO  */
+/*Boton inicio registro*/
+#signup {
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 45%;
+    height: 70vh;
+    margin-right: 3%;
+    margin-top: 30px;
+  }
+
+.formulario{
+    padding-top: 40px;
+}
+
+form label{
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    margin-top: 30px;
+    font-weight: 600;
+}

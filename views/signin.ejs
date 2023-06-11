@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../index.css">
     <title></title>
 </head>
 <body>
     <%- layout('layouts/plantillaEjs') %>
-    <div class="container mx-auto mt-5" style="max-width: 700px; font-family: 'Open Sans', sans-serif;">
+    <div class="container" style="font-family: 'Open Sans', sans-serif;" id="signin">
         <form action="/signin" method="POST">
-            <div class="mb-3">
-              <h1 style="font-size: 36px; color: #070c1c; font-family:'Anton', sans-serif; font-weight: bold; ">Ingresar</h1>
+            <div class="formulario">
+              <h1 style="font-size: 46px; color: #070c1c; font-family:'Anton', sans-serif; font-weight: bold; text-align: center; ">Ingresar</h1>
               <label for="exampleInputEmail1" class="form-label" >Correo electronico</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Ej: ejemplo@gmail.com" autofocus>
             </div>
-            <div class="mb-3">
+            <div >
               <label for="exampleInputPassword1" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="exampleInputPassword1" name="password" >
               <button id="showPasswordButton">Mostrar contraseña</button>
