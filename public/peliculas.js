@@ -27,7 +27,7 @@ const peliculas = [
       Sinopsis: "Un portero de un famoso hotel europeo entabla amistad con un joven empleado y juntos se ven envueltos en una trama de robo y asesinato.",
       Trailer: "https://www.youtube.com/embed/zru-1DbbcsA",
       Puntuacion: 0,
-      CineDondeVerla: ['Cine ideal','Abasto Cine','Cine Hoyts'],
+      CineDondeVerla: ['Cine ideal','Cinema H','Cine Hoyts'],
       Genero: "Comedia, Drama",
       Plataforma: "Prime Video",
       puntuacionMaxima: 5
@@ -236,7 +236,7 @@ const peliculas = [
         Sinopsis: "La película sigue a una madre que busca ayuda para su hija poseída por un demonio y a un sacerdote que se enfrenta al mal en una batalla por el alma de la niña.",
         Trailer: "https://www.youtube.com/embed/YDGw1MTEe9k",
         Puntuacion: 0,
-        CineDondeVerla: ['Cine Hoyts','Showcase Cinemas','Abasto Cine'
+        CineDondeVerla: ['Cine Hoyts','Showcase Cinemas','Cinema H'
       ],
         Genero: "Terror",
         Plataforma: "Netflix",
@@ -259,7 +259,7 @@ const peliculas = [
         Sinopsis: "La película sigue a dos investigadores paranormales que ayudan a una familia a enfrentar una presencia malévola en su casa.",
         Trailer: "https://www.youtube.com/embed/k10ETZ41q5o",
         Puntuacion: 0,
-        CineDondeVerla: ['Abasto Cine'  ],
+        CineDondeVerla: ['Cinema H'  ],
         Genero: "Terror, Sobrenatural",
         Plataforma: "Amazon Prime Video",
         puntuacionMaxima: 5
@@ -270,7 +270,7 @@ const peliculas = [
         Sinopsis: "La película sigue a un grupo de personas que luchan por sobrevivir en una granja mientras los muertos vivientes se levantan de sus tumbas y comienzan a atacarlos.",
         Trailer: "https://www.youtube.com/embed/I-o_znDnRh8",
         Puntuacion: 0,
-        CineDondeVerla: ['Abasto Cine'],
+        CineDondeVerla: ['Cinema H'],
         Genero: "Terror",
         Plataforma: "Netflix",
         puntuacionMaxima: 5
@@ -281,7 +281,7 @@ const peliculas = [
         Sinopsis: "La película sigue a un hombre que se convierte en cuidador de un hotel aislado con su familia y comienza a perder la cordura mientras ocurren sucesos sobrenaturales en el lugar.",
         Trailer: "https://www.youtube.com/embed/5Cb3ik6zP2I",
         Puntuacion: 0,
-        CineDondeVerla: ['Abasto Cine','Cine Hoyts'],
+        CineDondeVerla: ['Cinema H','Cine Hoyts'],
         Genero: "Terror, Psicológico",
         Plataforma: "Hulu",
         puntuacionMaxima: 5
@@ -292,7 +292,7 @@ const peliculas = [
         Sinopsis: "La película sigue a una joven agente del FBI que busca la ayuda de un asesino en serie encarcelado para atrapar a otro asesino en serie activo.",
         Trailer: "https://www.youtube.com/embed/W6Mm8Sbe__o",
         Puntuacion: 0,
-        CineDondeVerla: ['Abasto Cine'],
+        CineDondeVerla: ['Cinema H'],
         Genero: "Terror, Suspenso",
         Plataforma: "Hulu",
         puntuacionMaxima: 5
@@ -303,7 +303,7 @@ const peliculas = [
         Sinopsis: "La película sigue a una familia que comienza a experimentar una serie de eventos espeluznantes después de la muerte de su abuela.",
         Trailer: "https://www.youtube.com/embed/V6wWKNij_1M",
         Puntuacion: 0,
-        CineDondeVerla: ['Abasto Cine','Cine Hoyts'],
+        CineDondeVerla: ['Cinema H','Cine Hoyts'],
         Genero: "Terror",
         Plataforma: "Amazon Prime Video",
         puntuacionMaxima: 5
