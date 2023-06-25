@@ -5,9 +5,7 @@
 
 body{
   background-image: none;
-  background-color: #c93132;
 background-image: linear-gradient(270deg, #c93132 0%, #284fd4 100%);
-
 }
 .modal {
     position: fixed;
@@ -118,3 +116,22 @@ background-image: linear-gradient(270deg, #c93132 0%, #284fd4 100%);
     font-size: 24px;
     cursor: pointer;
   }
+
+
+  .cuadrado {
+    display: inline-block;
+    width: auto;
+    margin: 4px;
+    padding: 10px;
+    background-color: #D1F5FF;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 1s;
+    cursor: pointer;
+    /* Agrega aquí cualquier otro estilo deseado para los cuadros */
+}
+  
+  
+.cuadrado:hover{
+    transform: scale(1.01);
+    background-color: rgb(100, 125, 189);
+}

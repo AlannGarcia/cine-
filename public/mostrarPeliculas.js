@@ -1,8 +1,8 @@
-import {peliculas} from './peliculas.js';
+import { peliculas } from './peliculas.js';
 
 const pelis = document.getElementById("pelis");
 const inputBusqueda = document.getElementById("busqueda");
-//Obtener la ventana emergente y los elementos de contenido
+// Obtener la ventana emergente y los elementos de contenido
 const modal = document.getElementById("myModal");
 const modalPoster = document.getElementById("modalPoster");
 const modalTitle = document.getElementById("modalTitle");
@@ -11,8 +11,6 @@ const modalTrailer = document.getElementById("modalTrailer");
 const modalPlataforma = document.getElementById("modalPlataforma");
 const modalPuntuacion = document.getElementById("modalPuntuacion");
 const modalCines = document.getElementById("modalCines");
-
-
 
 function mostrarListaPeliculas(pelisFiltradas) {
   pelis.innerHTML = "";
@@ -42,7 +40,7 @@ function mostrarListaPeliculas(pelisFiltradas) {
     // Agregar estrellas
     const divStars = document.createElement("div");
     divStars.classList.add('stars');
-    for(let i=1; i<=pel.puntuacionMaxima; i++) {
+    for (let i = 1; i <= pel.puntuacionMaxima; i++) {
       const star = document.createElement("span");
       star.classList.add('star');
       star.setAttribute('data-value', i);
@@ -51,7 +49,7 @@ function mostrarListaPeliculas(pelisFiltradas) {
       // Agregar evento de clic solamente a esta estrella
       star.addEventListener("click", () => {
         console.log('se hizo click');
-        const value = parseInt(star.getAttribute("data-value")); 
+        const value = parseInt(star.getAttribute("data-value"));
         pel.Puntuacion = value;
         star.style.color = "black"; // Pintar la estrella clickeada de negro
       });
@@ -69,16 +67,12 @@ function mostrarListaPeliculas(pelisFiltradas) {
         });
       });
 
-      
-
       divStars.appendChild(star);
     }
     divCard.appendChild(divStars);
 
-
     div.appendChild(divCard);
     pelis.appendChild(div);
-
 
     // Agregar el evento de clic a la imagen de la portada
     const portadas = document.querySelectorAll("#pelis img");
@@ -88,50 +82,54 @@ function mostrarListaPeliculas(pelisFiltradas) {
 
         modalPoster.src = pelicula.Poster;
         modalTitle.innerText = pelicula.Titulo;
-        modalSynopsis.innerText = pelicula.Sinopsis;
+        modalSynopsis.innerHTML = "";
+        const divSynopsis = document.createElement("div");
+        divSynopsis.classList.add('cuadrado');
+        divSynopsis.textContent = pelicula.Sinopsis;
+        modalSynopsis.appendChild(divSynopsis);
+
         modalTrailer.src = pelicula.Trailer;
-        modalPlataforma.innerText = pelicula.Plataforma;
-        modalPuntuacion.innerText = pelicula.Puntuacion;
-        modalCines.innerText = pelicula.CineDondeVerla;
+
+        const divPlataforma = document.createElement("div");
+        divPlataforma.classList.add('cuadrado');
+        divPlataforma.textContent = pelicula.Plataforma;
+        modalPlataforma.innerHTML = '';
+        modalPlataforma.appendChild(divPlataforma);
+
+        const divPuntuacion = document.createElement("div");
+        divPuntuacion.classList.add('cuadrado');
+        divPuntuacion.textContent = pelicula.Puntuacion;
+        modalPuntuacion.innerHTML = '';
+        modalPuntuacion.appendChild(divPuntuacion);
+
+        const divCines = document.createElement("div");
+        divCines.classList.add('cuadrado');
+        divCines.textContent = pelicula.CineDondeVerla;
+        modalCines.innerHTML = '';
+        modalCines.appendChild(divCines);
 
         // Mostrar la ventana emergente
         modal.style.display = "block";
       });
     });
   });
-};
-
-
-
-
-function filtrarPeliculas() {
-    const busqueda = inputBusqueda.value.toLowerCase();
-    const pelisFiltradas = peliculas.filter(pel => {
-        const titulo = pel.Titulo.toLowerCase();
-        const genero = pel.Genero.toLowerCase();
-        const plataforma = pel.Plataforma.toLowerCase();
-        return titulo.includes(busqueda) || genero.includes(busqueda) || plataforma.includes(busqueda);
-    });
-    mostrarListaPeliculas(pelisFiltradas);
 }
 
-
+function filtrarPeliculas() {
+  const busqueda = inputBusqueda.value.toLowerCase();
+  const pelisFiltradas = peliculas.filter(pel => {
+    const titulo = pel.Titulo.toLowerCase();
+    const genero = pel.Genero.toLowerCase();
+    const plataforma = pel.Plataforma.toLowerCase();
+    return titulo.includes(busqueda) || genero.includes(busqueda) || plataforma.includes(busqueda);
+  });
+  mostrarListaPeliculas(pelisFiltradas);
+}
 
 inputBusqueda.addEventListener("input", filtrarPeliculas);
 mostrarListaPeliculas(peliculas);
-
-
 
 const close = document.querySelector(".close");
 close.addEventListener("click", () => {
   modal.style.display = "none";
 });
-
-
-
-
-
-
-
-
-

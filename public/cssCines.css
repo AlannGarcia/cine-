@@ -5,8 +5,9 @@
 
 body{
     background-image: none;
-    background-color: #c93132;
+background-color: linear-gradient(0deg, #c93132 0%, #284fd4 100%);
 background-image: linear-gradient(0deg, #c93132 0%, #284fd4 100%);
+
 
 }
 #cinesDisp{
@@ -52,4 +53,22 @@ background-image: linear-gradient(0deg, #c93132 0%, #284fd4 100%);
 
 .mapaCines{
     margin: 5% 22%;
+}
+
+.cuadrado {
+    display: inline-block;
+    width: auto;
+    margin: 4px;
+    padding: 10px;
+    background-color: #4f75d4;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: 1s;
+    cursor: pointer;
+    /* Agrega aquí cualquier otro estilo deseado para los cuadros */
+}
+  
+  
+.cuadrado:hover{
+    transform: scale(1.05);
+    background-color: #758ece;
 }

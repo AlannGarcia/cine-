@@ -19,10 +19,27 @@ window.addEventListener('DOMContentLoaded', function() {
     function mostrarDetallesCine(cine) {
       let peliculasElemento = document.getElementById('peliculas');
       let combosElemento = document.getElementById('combos');
-  
-      // Mostrar los detalles del cine seleccionado
-      peliculasElemento.textContent = cine.peliculas;
-      combosElemento.textContent = cine.combos;
+    
+      // Limpiar los elementos existentes
+      peliculasElemento.innerHTML = '';
+      combosElemento.innerHTML = '';
+    
+      // Mostrar las películas del cine seleccionado
+      cine.peliculas.forEach(function(pelicula) {
+        let peliculaElemento = document.createElement('div');
+        peliculaElemento.classList.add('cuadrado');
+        peliculaElemento.textContent = pelicula;
+        peliculasElemento.appendChild(peliculaElemento);
+      });
+    
+      // Mostrar los combos del cine seleccionado
+      cine.combos.forEach(function(combo) {
+        let comboElemento = document.createElement('div');
+        comboElemento.classList.add('cuadrado');
+        comboElemento.textContent = combo;
+        combosElemento.appendChild(comboElemento);
+      });
     }
+    
   });
   
